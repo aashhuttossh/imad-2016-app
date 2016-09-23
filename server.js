@@ -13,9 +13,26 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+
+
 app.get('/ashutosh', function (req, res) {
-  res.sendFile("Its ashutosh here!");
+  res.sendFile('Its ashutosh here!');
 });
+
+
+app.get('/ashutosh1', function (req, res) {
+  res.sendFile('Its ashutosh here twice!');
+});
+
+
+app.get('/ashutosh2', function (req, res) {
+  res.sendFile('Its ashutosh here thrice!');
+});
+
+
+
+
+
 
 
 app.get('/ui/madi.png', function (req, res) {
