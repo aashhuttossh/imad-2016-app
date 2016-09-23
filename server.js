@@ -16,17 +16,17 @@ app.get('/ui/style.css', function (req, res) {
 
 
 app.get('/ashutosh', function (req, res) {
-  res.sendFile('Its ashutosh here!');
+  res.send('Its ashutosh here!');
 });
 
 
 app.get('/ashutosh1', function (req, res) {
-  res.sendFile('Its ashutosh here twice!');
+  res.send('Its ashutosh here twice!');
 });
 
 
 app.get('/ashutosh2', function (req, res) {
-  res.sendFile('Its ashutosh here thrice!');
+  res.send('Its ashutosh here thrice!');
 });
 
 
