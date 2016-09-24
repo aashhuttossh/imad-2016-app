@@ -14,6 +14,30 @@ var try1={
 };
 
 
+var htmlTemplate={
+    
+ temp: ` <html>
+ <head>
+<title> Ashutosh's Page</title>
+<meta name="viewport" content="width=device-width, intial-scale=1" />
+<link href="/ui/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="container">
+ <a href="/">home</a>   
+    </div>
+  
+   
+  hello worlda    dsnv    asf
+   
+   
+</body>
+</html>`
+
+    
+}
+
 
 
 
