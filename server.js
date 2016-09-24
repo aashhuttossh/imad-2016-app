@@ -73,7 +73,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/hello', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'hello.html'));
+  res.send(createTemp(try1));
 });
 
 app.get('/ui/style.css', function (req, res) {
