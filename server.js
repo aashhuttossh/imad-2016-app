@@ -52,6 +52,7 @@ function CreateTemp(data)
 </html>`;
 
     
+    return htmlTemplate;
     }
     
 }
