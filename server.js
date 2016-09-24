@@ -18,14 +18,14 @@ var htmlTemplate={
     
  temp: ` <html>
  <head>
-<title> Ashutosh's Page</title>
+<title> ${name}'s Page</title>
 <meta name="viewport" content="width=device-width, intial-scale=1" />
 <link href="/ui/style.css" rel="stylesheet"/>
 </head>
-
+ ${date}
 <body>
     <div class="container">
- <a href="/">home</a>   
+ <a href="/">${content}</a>   
     </div>
   
    
