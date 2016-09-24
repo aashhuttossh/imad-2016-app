@@ -73,7 +73,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/hello', function (req, res) {
-  res.send(createTemp(try1));
+  res.send(CreateTemp(try1));
 });
 
 app.get('/ui/style.css', function (req, res) {
