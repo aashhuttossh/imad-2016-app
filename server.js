@@ -26,13 +26,13 @@ var try1={
 
 function CreateTemp(data)
 {
-    var name11=data.name,
-    var date11=data.date,
-    var temp11=data.content,
+    var name11=data.name;
+    var date11=data.date;
+    var temp11=data.content;
 
-    var htmlTemplate={
-    
- temp: ` <html>
+    var htmlTemplate=
+
+` <html>
  <head>
 <title> ${name}'s Page</title>
 <meta name="viewport" content="width=device-width, intial-scale=1" />
@@ -49,10 +49,10 @@ function CreateTemp(data)
    
    
 </body>
-</html>`
+</html>`;
 
     
-    
+    }
     
 }
 
