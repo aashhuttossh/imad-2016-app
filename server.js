@@ -7,6 +7,8 @@ app.use(morgan('combined'));
 
 
 
+
+
 var try1={
     date:"sept 21",
     name:"ashutosh",
@@ -14,7 +16,21 @@ var try1={
 };
 
 
-var htmlTemplate={
+
+
+
+
+
+
+
+
+function CreateTemp(data)
+{
+    var name11=data.name,
+    var date11=data.date,
+    var temp11=data.content,
+
+    var htmlTemplate={
     
  temp: ` <html>
  <head>
@@ -36,7 +52,16 @@ var htmlTemplate={
 </html>`
 
     
+    
+    
 }
+
+
+
+
+
+
+
 
 
 
