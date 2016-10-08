@@ -4,7 +4,15 @@
 <meta name="viewport" content="width=device-width, intial-scale=1" />
 <link href="/ui/style.css" rel="stylesheet"/>
 <script>
+    
     alert("I am in java Scrip");
+    var cnt;
+    cnt=0;
+    var counter=document.getElementById("Count");
+    counter.onClick=function(){
+    cnt=cnt+1;
+    }
+    
 </script>
 <script src="/ui/isrc.js"></script>
 </head>
@@ -17,8 +25,11 @@
      Name: Ashutosh Singh
      Age:20
      University/College: Lovely Professional University
+     Views ${cnt}
  </pre>
  </div>  
+ 
+<button type="button" id="Count">Counter</button>
  
    
    
