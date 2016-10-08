@@ -81,6 +81,9 @@ app.get('/ashutosh2', function (req, res) {
 });
 
 
+app.get('/ui/isrc.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'isrc.js'));
+});
 
 
 
