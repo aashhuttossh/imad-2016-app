@@ -10,4 +10,4 @@
     cnt=cnt+1;
     
    document.getElementById("val").innerHTML = cnt ;
-    };
+    }
