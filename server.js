@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 
-
+/*
 
 var try1={
     date:"sept 21",
@@ -49,7 +49,7 @@ function CreateTemp(data)
     
     return htmlTemplate;
     }
-    
+    */
 
 
 app.get('/', function (req, res) {
@@ -57,7 +57,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/hello', function (req, res) {
-  res.send(CreateTemp(try1));
+  res.sendFile(path.join(__dirname, 'ui', 'hello.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
