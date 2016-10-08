@@ -4,20 +4,19 @@
 <title> Ashutosh's Page</title>
 <meta name="viewport" content="width=device-width, intial-scale=1" />
 <link href="/ui/style.css" rel="stylesheet"/>
-<script>
+<script type="text/javascript">
     
-    alert("I am in java Scrip");
-    var cnt;
-    cnt=0;
-    var counter=document.getElementById("Count");
-    counter.onClick=function(){
+   // alert("I am in java Scrip");
+    var cnt=0;
+    
+    //var counter=document.getElementById("Count");
+    function msg1(){
     cnt=cnt+1;
     var int=cnt;
    document.getElementById("val").innerHTML = ${cnt} ;
     }
   
-</script>
-<script src="/ui/isrc.js"></script>
+
 
 </head>
 
@@ -33,7 +32,7 @@
  </pre>
  </div>  
  
-<button align="center" type="button" id="Count">Counter</button>
+<button align="center" type="button" id="Count" onclick="msg1()">Counter</button>
  
    
    
