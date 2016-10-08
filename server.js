@@ -26,16 +26,17 @@ function CreateTemp(data)
 
     var htmlTemplate=
 
-` <html>
+`<html>
  <head>
-<title> ${name}'s Page</title>
+<title> ${name11}'s Page</title>
 <meta name="viewport" content="width=device-width, intial-scale=1" />
 <link href="/ui/style.css" rel="stylesheet"/>
 </head>
- ${date}
+
 <body>
+              ${date11}    
     <div>
- <a href="/">${content}</a>   
+ <a href="/">${temp11}</a>   
     </div>
   
    
@@ -49,17 +50,6 @@ function CreateTemp(data)
     return htmlTemplate;
     }
     
-
-
-
-
-
-
-
-
-
-
-
 
 
 app.get('/', function (req, res) {
