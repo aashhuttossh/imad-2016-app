@@ -18,12 +18,6 @@ var try1={
 
 
 
-
-
-
-
-
-
 function CreateTemp(data)
 {
     var name11=data.name;
@@ -40,7 +34,7 @@ function CreateTemp(data)
 </head>
  ${date}
 <body>
-    <div class="container">
+    <div>
  <a href="/">${content}</a>   
     </div>
   
