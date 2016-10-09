@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-alert('hello bro! ');
+alert("hello bro!");
  
     var pos;
     function mov1(){
