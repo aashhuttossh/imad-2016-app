@@ -8,4 +8,3 @@ alert("hello bro!");
         img.style.width=750;
     }
     
-    counter=counter+1;
