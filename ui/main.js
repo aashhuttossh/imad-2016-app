@@ -7,3 +7,9 @@ console.log('Loaded!');
     }
     */
 
+var button=document.getElementById("but1");
+var cnter=0;
+
+button.onclick() =function () {
+    document.getElementById()
+};
