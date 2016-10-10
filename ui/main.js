@@ -8,22 +8,27 @@ var button=document.getElementById("but1");
     }
     */
 var request=new XMLHttpRequest();
+button.onclick=function () {
 request.onreadystatechange = function (){
 
-    if(request.readyState===XMLHttpRequest.DONE)
+    if(request.readyState===XMLHttpRequest.DONE){
         if(request.status===200)
           {  var cnter=request.responseText;
                document.getElementById("i1").innerHTML=cnter;
           }
+    }
+  
+};
+
+request.open('GET','http://aashhuttossh.imad.hasura-app.io/counter',true);
+request.send(null);
+
+};
+
+
+
+
+
 
 
     
-    
-}
-
-
-
-
-
-    
-}
