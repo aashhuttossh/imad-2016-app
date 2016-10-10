@@ -10,7 +10,7 @@ console.log('Loaded!');
 var button=document.getElementById("but1");
 var cnter=0;
 
-button.onclick() =function () {
+button.onclick =function () {
     cnter=cnter+1;
     document.getElementById("i1").innerHTML=cnter.toString();
 };
