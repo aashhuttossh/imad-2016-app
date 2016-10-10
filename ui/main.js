@@ -11,5 +11,6 @@ var button=document.getElementById("but1");
 var cnter=0;
 
 button.onclick() =function () {
-    document.getElementById()
+    cnter=cnter+1;
+    document.getElementById("i1").innerHTML=cnter.toString();
 };
