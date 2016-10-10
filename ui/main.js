@@ -6,12 +6,17 @@ console.log('Loaded!');
         img.style.width=750;
     }
     */
-//var request=new XMLHttpRequest():
+var request=new XMLHttpRequest();
+request.onreadystatechange = function (){
+
+    
+}
+
 
 var button=document.getElementById("but1");
 var cnter=0;
 
 function pressed () {
     cnter=cnter+1;
-    document.getElementById("i1").innerHTML=cnter.toString();
+    document.getElementById("i1").innerHTML=cnter;
 }
