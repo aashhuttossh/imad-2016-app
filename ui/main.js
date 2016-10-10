@@ -6,7 +6,7 @@ console.log('Loaded!');
         img.style.width=750;
     }
     */
-
+var request=new XMLHttpRequest():
 var button=document.getElementById("but1");
 var cnter=0;
 
