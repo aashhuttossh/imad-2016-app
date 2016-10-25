@@ -10,7 +10,7 @@
     cnt=cnt+1;
     
    document.getElementById("val").innerHTML = cnt ;
-   var htm=`<marquee scrollamount=${cnt}> hello </marquee>`;
+   var htm=`<marquee scrollamount=${cnt}> Speed Increased </marquee>`;
   
   document.getElementById("inp").innerHTML=htm;
     }
@@ -20,7 +20,7 @@
     cnt=cnt-1;
     
    document.getElementById("val").innerHTML = cnt ;
-    var htm=`<marquee scrollamount=${cnt}> hello </marquee>`;
+    var htm=`<marquee scrollamount=${cnt}> Speed Decreased </marquee>`;
  
   document.getElementById("inp").innerHTML=htm;
     }
