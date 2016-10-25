@@ -17,7 +17,6 @@ document.getElementById("wrt").innerHTML = counter;
 request.open('GET','http://aashhuttossh.imad.hasura-app.io/counter',true);
 request.send(null);
 
-};
 
 
 
