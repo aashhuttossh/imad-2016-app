@@ -5,8 +5,15 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-
+var http = require('http');
+var Pool = require('pg').Pool;
+var config={
+    user:'aashhuttossh',
+    database:'aashhuttossh'
+    host:'db.imad.hasura-app.io',
+    port:'5432',
+    password:process.env.DB_PASSWORD
+};
 /*
 
 var try1={
@@ -54,10 +61,24 @@ function CreateTemp(data)
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-  
-    
-    
 });
+
+
+var pool = new Pool(config);
+app.get('/test_db', function (req, res) {
+  //make req
+  //return response
+  pool.query('SELECT * FROM test',function(err,result){
+      if(err){
+          res.status(500).send(err.toString());
+      }
+      else{
+          res.send(JSON.stringify(result));
+      }
+      
+  })
+});
+
 
 app.get('/hello', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hello.html'));
