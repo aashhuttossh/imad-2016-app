@@ -5,7 +5,19 @@
 <meta name="viewport" content="width=device-width, intial-scale=1" />
 <link href="/ui/style.css" rel="stylesheet"/>
 
-<script src=/ui/isrc.js></script> 
+<script src=/ui/isrc.js>
+    
+    var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,1350,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,1350,80);
+    
+</script> 
 </head>
 
 
@@ -30,6 +42,9 @@
 <button  type="button" id="Count" onclick="msg1()">Counter</button>
  </div>
    
+<marquee><canvas id="myCanvas" width="1350" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas></marquee>
+
    
 </body>
 </html>
