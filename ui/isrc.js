@@ -12,5 +12,7 @@
    document.getElementById("val").innerHTML = cnt ;
     }
 
-    
+  var htm=`<marquee scrollamount=${cnt}> hello </marquee>`;
+  
+  document.getElementById("inp").innerHTML=htm;
    
