@@ -16,7 +16,7 @@
     }
 
  
-    function msg1(){
+    function msg2(){
     cnt=cnt-1;
     
    document.getElementById("val").innerHTML = cnt ;
