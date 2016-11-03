@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var http = require('http');
-var Pool = require('pg').Pool;
+var Pool =   require('pg').Pool;
 var config={
     user:'aashhuttossh',
     database:'aashhuttossh',
