@@ -121,6 +121,9 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 
+app.get('/ui/nptellogo.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'nptellogo.jpg'));
+});
 
 app.get('/ui/img.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'img.jpg'));
