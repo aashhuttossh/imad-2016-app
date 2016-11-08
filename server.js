@@ -63,9 +63,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
 
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
@@ -101,6 +98,9 @@ app.get('/articles/articleName',function(req,res){
     });
 
 
+app.get('/login', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+});
 
 app.get('/hello', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hello.html'));
