@@ -60,7 +60,7 @@ function CreateTemp(data)
 
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, '', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 
@@ -99,7 +99,7 @@ app.get('/articles/articleName',function(req,res){
 
 
 app.get('/login', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+  res.sendFile(path.join(__dirname, '', 'login.html'));
 });
 
 app.get('/hello', function (req, res) {
