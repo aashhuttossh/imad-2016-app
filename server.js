@@ -5,6 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+
+
+
+
 var http = require('http');
 var Pool =   require('pg').Pool;
 var config={
@@ -79,6 +84,8 @@ app.get('/test-db', function (req, res) {
       
   })
 });
+
+
 
 app.get('/articles/articleName',function(req,res){
     var articleName=req.params.articleName;
