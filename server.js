@@ -87,9 +87,9 @@ app.get('/test-db', function (req, res) {
 
 
 
-app.get('/login',function(req,res){
+app.get('/articles/articleName',function(req,res){
     var articleName=req.params.articleName;
-    pool.query("SELECT * FROM article WHERE title="+document.getElementById("inp"),function(err,result)
+    pool.query("SELECT * FROM article",function(err,result)
     {if(err)
         {res.status(500).send(err.toString());
     }
