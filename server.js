@@ -87,7 +87,7 @@ app.get('/test-db', function (req, res) {
 
 
 
-app.get('/articles/articleOne',function(req,res){
+app.get('/article',function(req,res){
     var articleName=req.params.articleName;
     pool.query("SELECT * FROM article",function(err,result)
     {if(err)
