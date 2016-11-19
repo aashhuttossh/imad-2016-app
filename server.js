@@ -110,6 +110,12 @@ app.get('/login', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 });
 
+
+
+app.get('/game1', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'game1.html'));
+});
+
 app.get('/hello', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hello.html'));
 });
