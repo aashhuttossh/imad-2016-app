@@ -151,6 +151,10 @@ app.get('/ui/isrc.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'isrc.js'));
 });
 
+app.get('/ui/fireworks', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fireworks.html'));
+});
+
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
